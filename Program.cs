@@ -2,19 +2,16 @@
 
 class Program
 {
-    // Task 2 Function
-    static int Square(int number)
+    static void PrintWelcome(string name)
     {
-        return number * number;
+        Console.WriteLine($"Welcome, {name}!");
     }
 
     static void Main()
     {
-        Console.Write("Enter a number: ");
-        int num = Convert.ToInt32(Console.ReadLine());
+        Console.Write("Enter your name: ");
+        string name = Console.ReadLine();
 
-        int result = Square(num);
-
-        Console.WriteLine("Square = " + result);
+        PrintWelcome(name);
     }
 }

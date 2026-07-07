@@ -1,0 +1,14 @@
+C:\Users\DELL\source\repos\CsharpProject\CsharpProject\bin\Debug\net10.0\CsharpProject..exe
+C:\Users\DELL\source\repos\CsharpProject\CsharpProject\bin\Debug\net10.0\CsharpProject..deps.json
+C:\Users\DELL\source\repos\CsharpProject\CsharpProject\bin\Debug\net10.0\CsharpProject..runtimeconfig.json
+C:\Users\DELL\source\repos\CsharpProject\CsharpProject\bin\Debug\net10.0\CsharpProject..dll
+C:\Users\DELL\source\repos\CsharpProject\CsharpProject\bin\Debug\net10.0\CsharpProject..pdb
+C:\Users\DELL\source\repos\CsharpProject\CsharpProject\obj\Debug\net10.0\CsharpProject..GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\DELL\source\repos\CsharpProject\CsharpProject\obj\Debug\net10.0\CsharpProject..AssemblyInfoInputs.cache
+C:\Users\DELL\source\repos\CsharpProject\CsharpProject\obj\Debug\net10.0\CsharpProject..AssemblyInfo.cs
+C:\Users\DELL\source\repos\CsharpProject\CsharpProject\obj\Debug\net10.0\CsharpProject..csproj.CoreCompileInputs.cache
+C:\Users\DELL\source\repos\CsharpProject\CsharpProject\obj\Debug\net10.0\CsharpProject..dll
+C:\Users\DELL\source\repos\CsharpProject\CsharpProject\obj\Debug\net10.0\refint\CsharpProject..dll
+C:\Users\DELL\source\repos\CsharpProject\CsharpProject\obj\Debug\net10.0\CsharpProject..pdb
+C:\Users\DELL\source\repos\CsharpProject\CsharpProject\obj\Debug\net10.0\CsharpProject..genruntimeconfig.cache
+C:\Users\DELL\source\repos\CsharpProject\CsharpProject\obj\Debug\net10.0\ref\CsharpProject..dll
