@@ -12,3 +12,4 @@ C:\Users\DELL\source\repos\CsharpProject\CsharpProject\obj\Debug\net10.0\refint\
 C:\Users\DELL\source\repos\CsharpProject\CsharpProject\obj\Debug\net10.0\CsharpProject..pdb
 C:\Users\DELL\source\repos\CsharpProject\CsharpProject\obj\Debug\net10.0\CsharpProject..genruntimeconfig.cache
 C:\Users\DELL\source\repos\CsharpProject\CsharpProject\obj\Debug\net10.0\ref\CsharpProject..dll
+C:\Users\DELL\source\repos\CsharpProject\CsharpProject\obj\Debug\net10.0\CsharpProject..sourcelink.json

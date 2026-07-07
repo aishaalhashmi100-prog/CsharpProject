@@ -1,17 +1,11 @@
-﻿using System;
-
-class Program
+﻿static int Square(int number)
 {
-    static void PrintWelcome(string name)
-    {
-        Console.WriteLine($"Welcome, {name}!");
-    }
-
-    static void Main()
-    {
-        Console.Write("Enter your name: ");
-        string name = Console.ReadLine();
-
-        PrintWelcome(name);
-    }
+    return number * number;
 }
+
+Console.Write("Enter a number: ");
+int num = int.Parse(Console.ReadLine());
+
+int result = Square(num);
+
+Console.WriteLine($"Square of {num} is {result}");
