@@ -4,34 +4,25 @@ class Program
 {
     static void Main()
     {
-        Console.Write("Enter your age: ");
-        int age = int.Parse(Console.ReadLine()!);
+        Console.Write("Enter total bill amount: ");
+        double bill = double.Parse(Console.ReadLine()!);
 
-        string category;
-        double price;
+        Console.Write("Are you a loyalty member (yes/no): ");
+        string answer = Console.ReadLine()!;
 
-        if (age >= 0 && age <= 12)
+        bool isMember = answer.ToLower() == "yes";
+
+        double discount = 0;
+
+        if (bill > 20 && isMember)
         {
-            category = "Children";
-            price = 2.000;
-        }
-        else if (age >= 13 && age <= 59)
-        {
-            category = "Adults";
-            price = 5.000;
-        }
-        else if (age >= 60)
-        {
-            category = "Seniors";
-            price = 3.000;
-        }
-        else
-        {
-            category = "Invalid age";
-            price = 0;
+            discount = bill * 0.15;
         }
 
-        Console.WriteLine("Category: " + category);
-        Console.WriteLine("Ticket price: " + price + " OMR");
+        double finalAmount = bill - discount;
+
+        Console.WriteLine("Original bill: " + bill + " OMR");
+        Console.WriteLine("Discount: " + discount + " OMR");
+        Console.WriteLine("Final amount: " + finalAmount + " OMR");
     }
 }
