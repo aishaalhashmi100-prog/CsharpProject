@@ -4,42 +4,48 @@ class Program
 {
     static void Main()
     {
-        Console.Write("Enter day number (1-7): ");
-        int day = int.Parse(Console.ReadLine()!);
+        Console.Write("Enter first number: ");
+        double num1 = double.Parse(Console.ReadLine()!);
 
-        switch (day)
+        Console.Write("Enter second number: ");
+        double num2 = double.Parse(Console.ReadLine()!);
+
+        Console.Write("Enter operator (+, -, *, /): ");
+        char op = char.Parse(Console.ReadLine()!);
+
+        double result;
+
+        switch (op)
         {
-            case 1:
-                Console.WriteLine("Sunday");
+            case '+':
+                result = num1 + num2;
                 break;
 
-            case 2:
-                Console.WriteLine("Monday");
+            case '-':
+                result = num1 - num2;
                 break;
 
-            case 3:
-                Console.WriteLine("Tuesday");
+            case '*':
+                result = num1 * num2;
                 break;
 
-            case 4:
-                Console.WriteLine("Wednesday");
-                break;
-
-            case 5:
-                Console.WriteLine("Thursday");
-                break;
-
-            case 6:
-                Console.WriteLine("Friday");
-                break;
-
-            case 7:
-                Console.WriteLine("Saturday");
+            case '/':
+                if (num2 != 0)
+                {
+                    result = num1 / num2;
+                }
+                else
+                {
+                    Console.WriteLine("Cannot divide by zero");
+                    return;
+                }
                 break;
 
             default:
-                Console.WriteLine("Invalid day number");
-                break;
+                Console.WriteLine("Invalid operator");
+                return;
         }
+
+        Console.WriteLine("Result: " + result);
     }
 }
