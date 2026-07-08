@@ -4,25 +4,42 @@ class Program
 {
     static void Main()
     {
-        Console.Write("Enter total bill amount: ");
-        double bill = double.Parse(Console.ReadLine()!);
+        Console.Write("Enter day number (1-7): ");
+        int day = int.Parse(Console.ReadLine()!);
 
-        Console.Write("Are you a loyalty member (yes/no): ");
-        string answer = Console.ReadLine()!;
-
-        bool isMember = answer.ToLower() == "yes";
-
-        double discount = 0;
-
-        if (bill > 20 && isMember)
+        switch (day)
         {
-            discount = bill * 0.15;
+            case 1:
+                Console.WriteLine("Sunday");
+                break;
+
+            case 2:
+                Console.WriteLine("Monday");
+                break;
+
+            case 3:
+                Console.WriteLine("Tuesday");
+                break;
+
+            case 4:
+                Console.WriteLine("Wednesday");
+                break;
+
+            case 5:
+                Console.WriteLine("Thursday");
+                break;
+
+            case 6:
+                Console.WriteLine("Friday");
+                break;
+
+            case 7:
+                Console.WriteLine("Saturday");
+                break;
+
+            default:
+                Console.WriteLine("Invalid day number");
+                break;
         }
-
-        double finalAmount = bill - discount;
-
-        Console.WriteLine("Original bill: " + bill + " OMR");
-        Console.WriteLine("Discount: " + discount + " OMR");
-        Console.WriteLine("Final amount: " + finalAmount + " OMR");
     }
 }
