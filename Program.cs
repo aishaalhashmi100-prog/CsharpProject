@@ -4,27 +4,34 @@ class Program
 {
     static void Main()
     {
-        Console.Write("Enter temperature in Celsius: ");
-        double celsius = double.Parse(Console.ReadLine()!);
+        Console.Write("Enter your age: ");
+        int age = int.Parse(Console.ReadLine()!);
 
-        double fahrenheit = (celsius * 9 / 5) + 32;
+        string category;
+        double price;
 
-        string weather;
-
-        if (celsius < 10)
+        if (age >= 0 && age <= 12)
         {
-            weather = "Cold";
+            category = "Children";
+            price = 2.000;
         }
-        else if (celsius <= 30)
+        else if (age >= 13 && age <= 59)
         {
-            weather = "Mild";
+            category = "Adults";
+            price = 5.000;
+        }
+        else if (age >= 60)
+        {
+            category = "Seniors";
+            price = 3.000;
         }
         else
         {
-            weather = "Hot";
+            category = "Invalid age";
+            price = 0;
         }
 
-        Console.WriteLine("Fahrenheit: " + fahrenheit);
-        Console.WriteLine("Weather: " + weather);
+        Console.WriteLine("Category: " + category);
+        Console.WriteLine("Ticket price: " + price + " OMR");
     }
 }
