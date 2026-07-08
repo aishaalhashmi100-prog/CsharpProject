@@ -1,11 +1,19 @@
-﻿static int Square(int number)
+﻿using System;
+
+class Program
 {
-    return number * number;
+    static void Main()
+    {
+        Console.Write("Enter a whole number: ");
+        int number = int.Parse(Console.ReadLine()!);
+
+        if (number % 2 == 0)
+        {
+            Console.WriteLine("The number is Even");
+        }
+        else
+        {
+            Console.WriteLine("The number is Odd");
+        }
+    }
 }
-
-Console.Write("Enter a number: ");
-int num = int.Parse(Console.ReadLine());
-
-int result = Square(num);
-
-Console.WriteLine($"Square of {num} is {result}");
